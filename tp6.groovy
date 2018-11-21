@@ -24,8 +24,8 @@ node {
 node {
   stage('2- Print parameter'){
     sh '''
-       echo "Affichage du paramÃ¨tre saisie par l'utilisateur"
-       echo "  valeur du paramÃ¨tre : $missing_param"
+       echo "Affichage du paramètre saisie par l'utilisateur"
+       echo "  valeur du paramètre : $missing_param"
     '''
 
     // Pour rÃ©cupÃ©rer la valeur dans le script
@@ -44,7 +44,7 @@ node {
 //
 
 node {
-  stage('3- RÃ©cupÃ©ration des crÃ©dentials'){
+  stage('3- Récupération des crédentials'){
     withCredentials([
       usernamePassword(
           credentialsId: 'missing_credential',
